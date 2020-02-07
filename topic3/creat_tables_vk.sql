@@ -25,9 +25,9 @@ CREATE TABLE hashtags(
 
 DROP TABLE IF EXISTS media_hashtags;
 CREATE TABLE media_hashtags(
-	id SERIAL PRIMARY KEY,
     hashtag_id BIGINT UNSIGNED NOT NULL,
     media_id BIGINT UNSIGNED NOT NULL,
+    PRIMARY KEY (hashtag_id, media_id),
     FOREIGN KEY (hashtag_id) REFERENCES hashtags(id),
     FOREIGN KEY (media_id) REFERENCES media(id)
 );
