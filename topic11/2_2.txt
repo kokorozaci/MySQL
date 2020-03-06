@@ -1,0 +1,14 @@
+При помощи базы данных Redis решите задачу поиска имени пользователя по электронному адресу и наоборот, поиск электронного адреса пользователя по его имени.
+ 
+
+HMSET users Oleg "345@mail.com" Ann "123@mail.ru"
+ HMSET e-mails 345@mail.com "Oleg" 123@mail.ru "Ann"
+
+hget users Oleg
+1) "345@mail.com"
+
+ hmget e-mails 345@mail.com
+1) "Oleg"
+
+
+

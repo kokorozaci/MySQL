@@ -1,0 +1,6 @@
+use shop
+
+db.shop.insert({categorie: "Процессоры:, name: "Intel Core i3-8100", description: "Процессор для настольных персональных компьютеров, основанных на платформе Intel.", price: "7890.00"})
+db.shop.insert({categorie: "Материнские платы:, name: "ASUS ROG MAXIMUS X HERO", descroption: "Материнская плата ASUS ROG MAXIMUS X HERO, Z370, Socket 1151-V2, DDR4, ATX", price: 19310.00})
+db.shop.insert({categorie: "Материнские платы:, name: "Gigabyte H310M S2H", descroption: "Материнская плата Gigabyte H310M S2H, H310, Socket 1151-V2, DDR4, mATX", price: 4790.00})
+....
